@@ -10,11 +10,7 @@ all_skins, base_directory, output_directory, run_type = get_all_skins()
 run_mod.run(run_type)
 
 for skin in all_skins[:10]:
-    input_skin, output_img, gun_name, x_offset, y_offset, rotation, wear = [
-        skin.strip('"') for skin in skin.split('" "')]
-    x_offset = float(x_offset)
-    y_offset = float(y_offset)
-    rotation = float(rotation)
+    input_skin, output_img, gun_name, wear = [skin.strip('"') for skin in skin.split('" "')]
     wear = float(wear)
     gun_index = guns_knives.ALL_GUNS_KNIVES.index(gun_name.upper())
 
@@ -23,7 +19,7 @@ for skin in all_skins[:10]:
     screen_manip.side_view()
     screen_manip.load_skin()
     try:
-        config_file_manip.modify_skin(f'{base_directory}/configs/{input_skin}', x_offset, y_offset, rotation, wear)
+        config_file_manip.modify_skin(f'{base_directory}/configs/{input_skin}', wear)
     except:
         print(input_skin)
     screen_manip.load_skin()
