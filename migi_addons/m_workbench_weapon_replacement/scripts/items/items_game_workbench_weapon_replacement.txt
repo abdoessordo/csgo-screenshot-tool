@@ -428,14 +428,10 @@
 		}
 		"custom_weapon_m249_prefab" // Replacing M249 with Shadow Daggers
 		{
-			"item_class"		"weapon_m249"
-			//"name"		"weapon_knife_push"
+			"name"		"weapon_knife_push"
 			"prefab"		"melee_unusual"
-			//"prefab"		"machinegun"
 			"item_name"		"#SFUI_WPNHUD_knife_push"
 			"item_description"		"#CSGO_Item_Desc_knife_push"
-			//"item_name"		"#SFUI_WPNHUD_M249"
-			//"item_description"		"#CSGO_Item_Desc_M249"
 			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_push"
 			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_push.vtf"
 			"model_player"		"models/weapons/v_knife_push.mdl"
