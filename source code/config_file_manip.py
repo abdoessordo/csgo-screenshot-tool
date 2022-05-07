@@ -20,9 +20,17 @@ def modify_skin(directory, wear):
         if line[0] == '"pattern_offset_y_end':
             line[1] = y_offset_start
 
+        if line[0] == '"pattern_rotate_start':
+            pattern_rotate_start = line[1]
+        if line[0] == '"pattern_rotate_end':
+            line[1] = pattern_rotate_start
+
         if line[0] == '"wear_remap_min' or line[0] == '"wear_remap_max':
             is_wear = True
             line[1] = f'{wear}"'
+
+        if line[0] == '"dialog_config':
+            skin.remove(line)
 
     if not is_wear:
         last_line = skin.pop()
@@ -39,4 +47,4 @@ def modify_skin(directory, wear):
 
 if __name__ == "__main__":
     modify_skin(
-        r"C:\Users\Abdellah\Desktop\screenshots1\configs\ak-47-baroque-purple.txt", 1)
+        r"C:\Users\Anon\Downloads\screenshots\tmp\screenshots\configs\ssg-08-abyss.txt", 1)

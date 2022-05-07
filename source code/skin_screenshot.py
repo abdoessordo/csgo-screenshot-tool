@@ -9,7 +9,7 @@ import run_mod
 all_skins, base_directory, output_directory, run_type = get_all_skins()
 run_mod.run(run_type)
 
-for skin in all_skins[:10]:
+for skin in all_skins:
     input_skin, output_img, gun_name, wear = [skin.strip('"') for skin in skin.split('" "')]
     wear = float(wear)
     gun_index = guns_knives.ALL_GUNS_KNIVES.index(gun_name.upper())
