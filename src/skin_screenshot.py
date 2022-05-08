@@ -23,6 +23,8 @@ for skin in all_skins:
     screen_manip.load_skin()
     sleep(1.5)
     print(output_img)
-    screen_manip.take_screenshot(f'{output_directory}\\screenshots\\{output_img}')
+    output_img_dir = f'{output_directory}\\screenshots\\{output_img}'
+    screen_manip.take_screenshot(output_img_dir)
+    screen_manip.crop_image(output_img_dir)
 
 screen_manip.close_game()

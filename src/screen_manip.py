@@ -1,4 +1,5 @@
 from time import sleep
+from PIL import Image
 import pyautogui
 import img
 import os
@@ -28,6 +29,13 @@ def take_screenshot(directory):
 
     my_screenshot = pyautogui.screenshot()
     my_screenshot.save(directory)
+
+
+def crop_image(directory):
+    # FIXME: Crop config per weapon and working with 4K and 1080P
+    im = Image.open(directory)
+    im_crop = im.crop((270, 40, 1830, 910))
+    im_crop.save(directory, "PNG")
 
 
 def verify_if_loaded():
