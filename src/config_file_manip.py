@@ -1,4 +1,4 @@
-def modify_skin(directory, wear):
+def modify_skin(directory, wear, weapon_index):
 
     with open(directory, 'r') as file:
         skin = [line.strip('\n').replace('\t', '')
@@ -35,11 +35,15 @@ def modify_skin(directory, wear):
         if line[0] == '"dialog_config':
             skin.remove(line)
 
+    last_line = skin.pop()
+
+    skin.append(['"dialog_config', f'{weapon_index},0,0,2"'])
+
     if not is_wear:
-        last_line = skin.pop()
         skin.append(['"wear_remap_min', f'{wear}"'])
         skin.append(['"wear_remap_max', f'{wear}"'])
-        skin.append(last_line)
+
+    skin.append(last_line)
 
     skin = ['""'.join(line) for line in skin]
     skin = "\n".join(skin)
@@ -51,4 +55,4 @@ def modify_skin(directory, wear):
 
 if __name__ == "__main__":
     modify_skin(
-        r"C:\Users\Anon\Downloads\screenshots\tmp\screenshots\configs\ssg-08-abyss.txt", 1)
+        r"C:\Users\Anon\Downloads\screenshots\tmp\screenshots\configs\ssg-08-abyss.txt", 1, 0)

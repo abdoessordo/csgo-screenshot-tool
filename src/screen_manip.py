@@ -30,12 +30,6 @@ def take_screenshot(directory):
     my_screenshot.save(directory)
 
 
-def side_view():
-    # move to sideview checkbox
-    pyautogui.moveTo(0.295 * WIDTH, 0.9 * HEIGHT, duration=0.1)
-    pyautogui.click()
-
-
 def verify_if_loaded():
     loaded = False
     while not loaded:
@@ -46,26 +40,6 @@ def verify_if_loaded():
 def close_workshop():
     pyautogui.moveTo(0.99 * WIDTH, 0.01 * HEIGHT, duration=0.1)
     pyautogui.click()
-
-
-def open_workshop():
-    pyautogui.typewrite("workshop_workbench")
-    pyautogui.keyDown("enter")
-
-
-def go_to_gun(index):
-    for i in range(index + 1):
-        pyautogui.keyDown("down")
-
-
-def change_gun(index):
-    close_workshop()
-    sleep(0.3)
-    open_workshop()
-    if index > 33:
-        index -= 34
-
-    go_to_gun(index)
 
 
 def close_game():
