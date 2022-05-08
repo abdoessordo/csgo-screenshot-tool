@@ -6,8 +6,7 @@ import config_file_manip
 import run_mod
 
 
-all_skins, base_directory, output_directory, run_type = get_all_skins()
-run_mod.run(run_type)
+all_skins, base_directory, output_directory = get_all_skins()
 
 for skin in all_skins:
     input_skin, output_img, gun_name, wear = [skin.strip('"') for skin in skin.split('" "')]
