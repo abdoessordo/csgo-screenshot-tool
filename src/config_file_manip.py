@@ -3,12 +3,15 @@ def modify_skin(directory, wear):
     with open(directory, 'r') as file:
         skin = [line.strip('\n').replace('\t', '')
                 for line in file.readlines()]
-        # bottom = skin[2::]
         skin = [line.split('""') for line in skin]
 
     file.close()
 
+    x_offset_start = None
+    y_offset_start = None
+    pattern_rotate_start = None
     is_wear = False
+
     for line in skin:
         if line[0] == '"pattern_offset_x_start':
             x_offset_start = line[1]
@@ -41,7 +44,8 @@ def modify_skin(directory, wear):
     skin = ['""'.join(line) for line in skin]
     skin = "\n".join(skin)
 
-    with open("C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\__custom_skin\skin_custom.txt", 'w') as file2:
+    with open("C:\\Program Files (x86)\\Steam\\steamapps\\common\\Counter-Strike Global Offensive"
+              "\\__custom_skin\\skin_custom.txt", 'w') as file2:
         file2.write(skin)
 
 

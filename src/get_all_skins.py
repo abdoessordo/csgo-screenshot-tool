@@ -6,6 +6,7 @@ def get_all_skins():
         base_directory, output_directory = sys.argv[1::]
     except:
         print("2 Arguments Needed")
+        sys.exit()
 
     with open(base_directory, "r") as all_skins_file:
         all_skins = [line.strip('\n') for line in all_skins_file.readlines()]
