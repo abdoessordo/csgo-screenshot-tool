@@ -2,7 +2,6 @@ import numpy as np
 from PIL import Image
 
 
-
 def verify_loaded():
     img_dir = "./is_loaded.png"
     im = Image.open(img_dir)
@@ -15,5 +14,3 @@ def verify_loaded():
         [87, 95, 97],
     ]
     return first_pixel in acceptable_values
-
-

@@ -38,7 +38,7 @@ def modify_skin(directory, wear):
         skin.append(['"wear_remap_max', f'{wear}"'])
         skin.append(last_line)
 
-    skin = [('""').join(line) for line in skin]
+    skin = ['""'.join(line) for line in skin]
     skin = "\n".join(skin)
 
     with open("C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\__custom_skin\skin_custom.txt", 'w') as file2:

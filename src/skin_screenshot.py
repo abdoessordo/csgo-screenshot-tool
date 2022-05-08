@@ -3,8 +3,6 @@ from get_all_skins import get_all_skins
 import screen_manip
 import guns_knives
 import config_file_manip
-import run_mod
-
 
 all_skins, base_directory, output_directory = get_all_skins()
 
@@ -24,6 +22,6 @@ for skin in all_skins:
     screen_manip.load_skin()
     sleep(1.5)
     print(output_img)
-    screen_manip.take_screenshot(f'{output_directory}\screenshots\{output_img}')
+    screen_manip.take_screenshot(f'{output_directory}\\screenshots\\{output_img}')
 
 screen_manip.close_game()

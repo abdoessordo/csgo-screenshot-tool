@@ -1,6 +1,5 @@
-from posixpath import basename
 from time import sleep
-import pyautogui 
+import pyautogui
 import img
 import os
 
@@ -17,18 +16,18 @@ def load_skin():
     pyautogui.click()
     pyautogui.click()
 
-    
+
 def take_screenshot(directory):
     base_directory = directory.split('\\')
-    if(len(base_directory) > 1):
+    if len(base_directory) > 1:
         base_directory.pop()
         base_directory = "\\".join(base_directory)
-        isExist = os.path.exists(base_directory)
-        if not isExist:
+        is_exist = os.path.exists(base_directory)
+        if not is_exist:
             os.makedirs(base_directory)
-    
-    myScreenshot = pyautogui.screenshot()
-    myScreenshot.save(directory)
+
+    my_screenshot = pyautogui.screenshot()
+    my_screenshot.save(directory)
 
 
 def side_view():
@@ -47,15 +46,17 @@ def verify_if_loaded():
 def close_workshop():
     pyautogui.moveTo(0.99 * WIDTH, 0.01 * HEIGHT, duration=0.1)
     pyautogui.click()
-    
+
 
 def open_workshop():
     pyautogui.typewrite("workshop_workbench")
     pyautogui.keyDown("enter")
 
-def go_to_gun(index) :
-    for i in range(index+1):
+
+def go_to_gun(index):
+    for i in range(index + 1):
         pyautogui.keyDown("down")
+
 
 def change_gun(index):
     close_workshop()
@@ -66,6 +67,7 @@ def change_gun(index):
 
     go_to_gun(index)
 
+
 def close_game():
     close_workshop()
     sleep(0.3)
@@ -75,4 +77,3 @@ def close_game():
 
 if __name__ == "__main__":
     verify_if_loaded()
-
