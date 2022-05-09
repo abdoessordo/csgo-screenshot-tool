@@ -1,3 +1,4 @@
+import math
 from time import sleep
 from PIL import Image
 import pyautogui
@@ -7,7 +8,7 @@ import os
 WIDTH, HEIGHT = pyautogui.size()
 
 
-def load_skin():
+def load_skin(first):
     # move to load button
     pyautogui.moveTo(0.85 * WIDTH, 0.98 * HEIGHT, duration=0.1)
     pyautogui.click()
@@ -17,10 +18,29 @@ def load_skin():
     pyautogui.click()
     pyautogui.click()
 
-    # When we load the first skin, we have to click the folder and then the file, so we need two double clicks.
-    # After the first load, this double click is not necessary anymore, but it doesn't break anything either.
-    pyautogui.click()
-    pyautogui.click()
+    if first:
+        # When we load the first skin, we have to click the folder and then the file, so we need two double clicks.
+        # After the first load, this double click is not necessary anymore and breaks tabbing.
+        pyautogui.click()
+        pyautogui.click()
+
+
+def reset_float_slider():
+    pyautogui.press('tab', presses=14, interval=0.1)
+    pyautogui.press('pagedown', presses=10, interval=0.1)
+
+
+def increase_float(current_float, float_goal, min_float, max_float):
+    steps = (max_float - min_float) / 100
+
+    while current_float < float_goal:
+        pyautogui.press('right')
+        current_float += steps
+        sleep(0.1)
+
+    pyautogui.press('enter')
+
+    return current_float
 
 
 def take_screenshot(directory):
@@ -59,7 +79,7 @@ def close_game():
     close_workshop()
     sleep(0.3)
     pyautogui.typewrite("exit")
-    pyautogui.keyDown("enter")
+    pyautogui.press("enter")
 
 
 if __name__ == "__main__":
