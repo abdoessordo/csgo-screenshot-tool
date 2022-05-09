@@ -2,7 +2,7 @@ import sys
 import json
 
 
-def get_all_skins():
+def get_all_skins() -> tuple:
     try:
         base_directory, output_directory = sys.argv[1::]
     except:

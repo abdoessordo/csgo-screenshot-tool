@@ -26,15 +26,14 @@ for i, skin in enumerate(all_skins):
     current_float_goal = from_float
     current_float = float(min_float)
 
-    # FIXME: Floats are kinda broken
     while current_float_goal <= to_float:
-        print(f'Current float {current_float}, current float goal {current_float_goal}')
+        print(f'Current float {"{:.2f}".format(current_float)}, current float goal {current_float_goal}')
+        sleep(1.5)
         output_img_dir = f'{output_directory}\\screenshots\\{output_img}\\{current_float_goal}.png'
         screen_manip.take_screenshot(output_img_dir)
         screen_manip.crop_image(output_img_dir)
 
         current_float_goal += 1
         current_float = screen_manip.increase_float(current_float, current_float_goal, min_float, max_float)
-        sleep(1.5)
 
 screen_manip.close_game()
