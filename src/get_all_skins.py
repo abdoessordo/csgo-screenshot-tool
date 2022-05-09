@@ -5,7 +5,7 @@ import json
 def get_all_skins() -> tuple:
     try:
         base_directory, output_directory = sys.argv[1::]
-    except:
+    except ValueError:
         print("2 arguments required")
         sys.exit()
 

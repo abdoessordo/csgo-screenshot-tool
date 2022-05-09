@@ -34,6 +34,7 @@ for i, skin in enumerate(all_skins):
         screen_manip.crop_image(output_img_dir)
 
         current_float_goal += 1
-        current_float = screen_manip.increase_float(current_float, current_float_goal, min_float, max_float)
+        if current_float_goal <= to_float:
+            current_float = screen_manip.increase_float(current_float, current_float_goal, min_float, max_float)
 
 screen_manip.close_game()
