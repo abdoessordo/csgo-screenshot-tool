@@ -1,4 +1,5 @@
 ALL_GUNS_KNIVES = [
+    # Guns
     'AK-47',
     'AUG',
     'AWP',
@@ -33,23 +34,24 @@ ALL_GUNS_KNIVES = [
     'CZ75-AUTO',
     'R8 REVOLVER',
     'MP5-SD',
-    'KARAMBIT',
-    'M9 BAYONET',
-    'HUNTSMAN KNIFE',
+    # Knives
     'BAYONET',
+    'BOWIE KNIFE',
+    'BUTTERFLY KNIFE',
     'CLASSIC KNIFE',
     'FALCHION KNIFE',
     'FLIP KNIFE',
-    'BOWIE KNIFE',
-    'BUTTERFLY KNIFE',
     'GUT KNIFE',
-    'SHADOW DAGGERS',
-    'URSUS KNIFE',
-    'PARACORD KNIFE',
-    'SURVIVAL KNIFE',
-    'SKELETON KNIFE',
+    'HUNTSMAN KNIFE',
+    'KARAMBIT',
+    'M9 BAYONET',
     'NAVAJA KNIFE',
     'NOMAD KNIFE',
-    'TALON KNIFE',
+    'PARACORD KNIFE',
+    'SHADOW DAGGERS',
+    'SKELETON KNIFE',
     'STILETTO KNIFE'
- ]
+    'SURVIVAL KNIFE',
+    'TALON KNIFE',
+    'URSUS KNIFE',
+]

@@ -2,7 +2,7 @@
 {
 	"prefabs"
 	{
-		"custom_weapon_deagle_prefab"	// Replacing Desert Eagle with Bayonet
+		"custom_weapon_ak47_prefab"	// Replacing AK-47 with Bayonet
 		{
 			"name"		"weapon_bayonet"
 			"prefab"		"melee_unusual"
@@ -34,296 +34,7 @@
 				}
 			}
 		}
-		"custom_weapon_elite_prefab" // Replacing Dual Berettas with Classic Knife
-		{
-			"name"		"weapon_knife_css"
-			"prefab"		"melee_unusual"
-			"item_name"		"#SFUI_WPNHUD_KnifeCSS"
-			"item_description"		"#CSGO_Item_Desc_Knife_CSS"
-			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_css"
-			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_css.vtf"
-			"model_player"		"models/weapons/v_knife_css.mdl"
-			"model_world"		"models/weapons/w_knife_css.mdl"
-			"used_by_classes"
-			{
-				"terrorists"		"1"
-				"counter-terrorists"		"1"
-			}
-			"attributes"
-			{
-				"pedestal display model"		"models/weapons/v_knife_css_inspect.mdl"
-			}
-			"inventory_image_data"
-			{
-				"spot_light_key"
-				{
-					"position"		"-45 50 35"
-					"color"		"0.55 0.55 0.56"
-					"lookat"		"0.0 0.0 0.0"
-					"inner_cone"		"0.500000"
-					"outer_cone"		"1.000000"
-				}
-				"camera_angles"		"30.0 -95.0 29.0"
-				"camera_offset"		"7.0 1.5 -1.5"
-			}
-			"paint_data"
-			{
-				"PaintableMaterial0"
-				{
-					"Name"		"knife_css"
-					"ViewmodelDim"		"2048"
-					"WorldDim"		"512"
-					"BaseTextureOverride"		"0"
-					"WeaponLength"		"12.570000"
-					"UVScale"		"0.360000"
-				}
-			}
-		}
-		"custom_weapon_fiveseven_prefab" // Replacing Five-Seven with Flip Knife
-		{
-			"name"		"weapon_knife_flip"
-			"prefab"		"melee_unusual"
-			"item_name"		"#SFUI_WPNHUD_KnifeFlip"
-			"item_description"		"#CSGO_Item_Desc_Knife_Flip"
-			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_flip"
-			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_flip.vtf"
-			"model_player"		"models/weapons/v_knife_flip.mdl"
-			"model_world"		"models/weapons/w_knife_flip.mdl"
-			"used_by_classes"
-			{
-				"terrorists"		"1"
-				"counter-terrorists"		"1"
-			}
-			"attributes"
-			{
-				"pedestal display model"		"models/weapons/v_knife_flip_inspect.mdl"
-			}
-			"inventory_image_data"
-			{
-				"camera_angles"		"30.0 -95.0 29.0"
-				"camera_offset"		"9.0 1.0 -1.5"
-			}
-			"paint_data"
-			{
-				"PaintableMaterial0"
-				{
-					"Name"		"knife_flip"
-					"ViewmodelDim"		"2048"
-					"WorldDim"		"512"
-					"BaseTextureOverride"		"0"
-					"WeaponLength"		"12.900000"
-					"UVScale"		"0.411000"
-				}
-			}
-		}
-		"custom_weapon_glock_prefab" // Replacing Glock-18 with Gut Knife
-		{
-			"name"		"weapon_knife_gut"
-			"prefab"		"melee_unusual"
-			"item_name"		"#SFUI_WPNHUD_KnifeGut"
-			"item_description"		"#CSGO_Item_Desc_Knife_Gut"
-			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_gut"
-			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_gut.vtf"
-			"model_player"		"models/weapons/v_knife_gut.mdl"
-			"model_world"		"models/weapons/w_knife_gut.mdl"
-			"used_by_classes"
-			{
-				"terrorists"		"1"
-				"counter-terrorists"		"1"
-			}
-			"attributes"
-			{
-				"pedestal display model"		"models/weapons/v_knife_gut_inspect.mdl"
-			}
-			"inventory_image_data"
-			{
-				"camera_angles"		"30.0 -95.0 23.0"
-				"camera_offset"		"10.0 1.2 -2"
-			}
-			"paint_data"
-			{
-				"PaintableMaterial0"
-				{
-					"Name"		"knife_gut"
-					"OrigMat"		"knife_gut"
-					"ViewmodelDim"		"2048"
-					"WorldDim"		"512"
-					"BaseTextureOverride"		"0"
-					"WeaponLength"		"14.610000"
-					"UVScale"		"0.733000"
-				}
-			}
-		}
-		"custom_weapon_ak47_prefab" // Replacing AK-47 with Karambit
-		{
-			"name"		"weapon_knife_karambit"
-			"prefab"		"melee_unusual"
-			"item_name"		"#SFUI_WPNHUD_KnifeKaram"
-			"item_description"		"#CSGO_Item_Desc_Knife_Karam"
-			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_karambit"
-			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_karambit.vtf"
-			"model_player"		"models/weapons/v_knife_karam.mdl"
-			"model_world"		"models/weapons/w_knife_karam.mdl"
-			"used_by_classes"
-			{
-				"terrorists"		"1"
-				"counter-terrorists"		"1"
-			}
-			"attributes"
-			{
-				"pedestal display model"		"models/weapons/v_knife_karam_inspect.mdl"
-			}
-			"inventory_image_data"
-			{
-				"camera_angles"		"30.0 -95.0 -5.0"
-				"camera_offset"		"10.0 1.5 -3.2"
-			}
-			"paint_data"
-			{
-				"PaintableMaterial0"
-				{
-					"Name"		"knife_karam"
-					"OrigMat"		"karam"
-					"ViewmodelDim"		"2048"
-					"WorldDim"		"512"
-					"BaseTextureOverride"		"0"
-					"WeaponLength"		"9.813000"
-					"UVScale"		"0.438000"
-				}
-			}
-		}
-		"custom_weapon_aug_prefab" // Replacing AUG with M9 Bayonet
-		{
-			"name"		"weapon_knife_m9_bayonet"
-			"prefab"		"melee_unusual"
-			"item_name"		"#SFUI_WPNHUD_KnifeM9"
-			"item_description"		"#CSGO_Item_Desc_KnifeM9"
-			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_m9_bayonet"
-			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_m9_bayonet.vtf"
-			"model_player"		"models/weapons/v_knife_m9_bay.mdl"
-			"model_world"		"models/weapons/w_knife_m9_bay.mdl"
-			"used_by_classes"
-			{
-				"terrorists"		"1"
-				"counter-terrorists"		"1"
-			}
-			"attributes"
-			{
-				"pedestal display model"		"models/weapons/v_knife_m9_bay_inspect.mdl"
-			}
-			"inventory_image_data"
-			{
-				"camera_angles"		"30.0 -95.0 29.0"
-				"camera_offset"		"7.0 1.5 -1.5"
-			}
-			"paint_data"
-			{
-				"PaintableMaterial0"
-				{
-					"Name"		"knife_m9_bay"
-					"ViewmodelDim"		"2048"
-					"WorldDim"		"512"
-					"BaseTextureOverride"		"0"
-					"WeaponLength"		"15.300000"
-					"UVScale"		"0.506000"
-				}
-			}
-		}
-		"custom_weapon_awp_prefab" // Replacing AWP with Huntsman Knife
-		{
-			"name"		"weapon_knife_tactical"
-			"prefab"		"melee_unusual"
-			"item_name"		"#SFUI_WPNHUD_KnifeTactical"
-			"item_description"		"#CSGO_Item_Desc_KnifeTactical"
-			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_tactical"
-			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_tactical.vtf"
-			"model_player"		"models/weapons/v_knife_tactical.mdl"
-			"model_world"		"models/weapons/w_knife_tactical.mdl"
-			"used_by_classes"
-			{
-				"terrorists"		"1"
-				"counter-terrorists"		"1"
-			}
-			"attributes"
-			{
-				"pedestal display model"		"models/weapons/v_knife_tactical_inspect.mdl"
-			}
-			"inventory_image_data"
-			{
-				"camera_angles"		"30.0 -95.0 29.0"
-				"camera_offset"		"7.0 1.5 -1.5"
-			}
-			"paint_data"
-			{
-				"PaintableMaterial0"
-				{
-					"Name"		"knife_tactical"
-					"ViewmodelDim"		"2048"
-					"WorldDim"		"512"
-					"BaseTextureOverride"		"0"
-					"WeaponLength"		"15.300000"
-					"UVScale"		"0.506000"
-				}
-			}
-			"tags"
-			{
-				"ItemSet"
-				{
-					"tag_value"		"set_community_3"
-					"tag_text"		"#CSGO_set_community_3"
-					"tag_group"		"ItemSet"
-					"tag_group_text"		"#SFUI_InvTooltip_SetTag"
-				}
-			}
-		}
-		"custom_weapon_famas_prefab" // Replacing FAMAS with Falchion Knife
-		{
-			"name"		"weapon_knife_falchion"
-			"prefab"		"melee_unusual"
-			"item_name"		"#SFUI_WPNHUD_knife_falchion_advanced"
-			"item_description"		"#CSGO_Item_Desc_knife_falchion_advanced"
-			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_falchion"
-			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_falchion.vtf"
-			"model_player"		"models/weapons/v_knife_falchion_advanced.mdl"
-			"model_world"		"models/weapons/w_knife_falchion_advanced.mdl"
-			"used_by_classes"
-			{
-				"terrorists"		"1"
-				"counter-terrorists"		"1"
-			}
-			"attributes"
-			{
-				"pedestal display model"		"models/weapons/v_knife_falchion_advanced_inspect.mdl"
-			}
-			"inventory_image_data"
-			{
-				"camera_angles"		"0 0 0"
-				"camera_offset"		"0 0 0"
-			}
-			"paint_data"
-			{
-				"PaintableMaterial0"
-				{
-					"Name"		"knife_falchion_advanced"
-					"ViewmodelDim"		"2048"
-					"WorldDim"		"512"
-					"BaseTextureOverride"		"0"
-					"WeaponLength"		"12.570000"
-					"UVScale"		"0.360000"
-				}
-			}
-			"tags"
-			{
-				"ItemSet"
-				{
-					"tag_value"		"set_community_8"
-					"tag_text"		"#CSGO_set_community_8"
-					"tag_group"		"ItemSet"
-					"tag_group_text"		"#SFUI_InvTooltip_SetTag"
-				}
-			}
-		}
-		"custom_weapon_g3sg1_prefab" // Replacing G3SG1 with Bowie Knife
+		"custom_weapon_aug_prefab" // Replacing AUG with Bowie Knife
 		{
 			"name"		"weapon_knife_survival_bowie"
 			"prefab"		"melee_unusual"
@@ -371,7 +82,7 @@
 				}
 			}
 		}
-		"custom_weapon_galilar_prefab" // Replacing Galil AR with Butterfly Knife
+		"custom_weapon_awp_prefab" // Replacing AWP with Butterfly Knife
 		{
 			"name"		"weapon_knife_butterfly"
 			"prefab"		"melee_unusual"
@@ -426,7 +137,416 @@
 				}
 			}
 		}
-		"custom_weapon_m249_prefab" // Replacing M249 with Shadow Daggers
+		"custom_weapon_deagle_prefab" // Replacing Desert Eagle with Classic Knife
+		{
+			"name"		"weapon_knife_css"
+			"prefab"		"melee_unusual"
+			"item_name"		"#SFUI_WPNHUD_KnifeCSS"
+			"item_description"		"#CSGO_Item_Desc_Knife_CSS"
+			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_css"
+			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_css.vtf"
+			"model_player"		"models/weapons/v_knife_css.mdl"
+			"model_world"		"models/weapons/w_knife_css.mdl"
+			"used_by_classes"
+			{
+				"terrorists"		"1"
+				"counter-terrorists"		"1"
+			}
+			"attributes"
+			{
+				"pedestal display model"		"models/weapons/v_knife_css_inspect.mdl"
+			}
+			"inventory_image_data"
+			{
+				"spot_light_key"
+				{
+					"position"		"-45 50 35"
+					"color"		"0.55 0.55 0.56"
+					"lookat"		"0.0 0.0 0.0"
+					"inner_cone"		"0.500000"
+					"outer_cone"		"1.000000"
+				}
+				"camera_angles"		"30.0 -95.0 29.0"
+				"camera_offset"		"7.0 1.5 -1.5"
+			}
+			"paint_data"
+			{
+				"PaintableMaterial0"
+				{
+					"Name"		"knife_css"
+					"ViewmodelDim"		"2048"
+					"WorldDim"		"512"
+					"BaseTextureOverride"		"0"
+					"WeaponLength"		"12.570000"
+					"UVScale"		"0.360000"
+				}
+			}
+		}
+		"custom_weapon_elite_prefab" // Replacing Dual Berettas with Falchion Knife
+		{
+			"name"		"weapon_knife_falchion"
+			"prefab"		"melee_unusual"
+			"item_name"		"#SFUI_WPNHUD_knife_falchion_advanced"
+			"item_description"		"#CSGO_Item_Desc_knife_falchion_advanced"
+			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_falchion"
+			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_falchion.vtf"
+			"model_player"		"models/weapons/v_knife_falchion_advanced.mdl"
+			"model_world"		"models/weapons/w_knife_falchion_advanced.mdl"
+			"used_by_classes"
+			{
+				"terrorists"		"1"
+				"counter-terrorists"		"1"
+			}
+			"attributes"
+			{
+				"pedestal display model"		"models/weapons/v_knife_falchion_advanced_inspect.mdl"
+			}
+			"inventory_image_data"
+			{
+				"camera_angles"		"0 0 0"
+				"camera_offset"		"0 0 0"
+			}
+			"paint_data"
+			{
+				"PaintableMaterial0"
+				{
+					"Name"		"knife_falchion_advanced"
+					"ViewmodelDim"		"2048"
+					"WorldDim"		"512"
+					"BaseTextureOverride"		"0"
+					"WeaponLength"		"12.570000"
+					"UVScale"		"0.360000"
+				}
+			}
+			"tags"
+			{
+				"ItemSet"
+				{
+					"tag_value"		"set_community_8"
+					"tag_text"		"#CSGO_set_community_8"
+					"tag_group"		"ItemSet"
+					"tag_group_text"		"#SFUI_InvTooltip_SetTag"
+				}
+			}
+		}
+		"custom_weapon_famas_prefab" // Replacing FAMAS with Flip Knife
+		{
+			"name"		"weapon_knife_flip"
+			"prefab"		"melee_unusual"
+			"item_name"		"#SFUI_WPNHUD_KnifeFlip"
+			"item_description"		"#CSGO_Item_Desc_Knife_Flip"
+			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_flip"
+			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_flip.vtf"
+			"model_player"		"models/weapons/v_knife_flip.mdl"
+			"model_world"		"models/weapons/w_knife_flip.mdl"
+			"used_by_classes"
+			{
+				"terrorists"		"1"
+				"counter-terrorists"		"1"
+			}
+			"attributes"
+			{
+				"pedestal display model"		"models/weapons/v_knife_flip_inspect.mdl"
+			}
+			"inventory_image_data"
+			{
+				"camera_angles"		"30.0 -95.0 29.0"
+				"camera_offset"		"9.0 1.0 -1.5"
+			}
+			"paint_data"
+			{
+				"PaintableMaterial0"
+				{
+					"Name"		"knife_flip"
+					"ViewmodelDim"		"2048"
+					"WorldDim"		"512"
+					"BaseTextureOverride"		"0"
+					"WeaponLength"		"12.900000"
+					"UVScale"		"0.411000"
+				}
+			}
+		}
+		"custom_weapon_fiveseven_prefab" // Replacing Five-SeveN with Gut Knife
+		{
+			"name"		"weapon_knife_gut"
+			"prefab"		"melee_unusual"
+			"item_name"		"#SFUI_WPNHUD_KnifeGut"
+			"item_description"		"#CSGO_Item_Desc_Knife_Gut"
+			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_gut"
+			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_gut.vtf"
+			"model_player"		"models/weapons/v_knife_gut.mdl"
+			"model_world"		"models/weapons/w_knife_gut.mdl"
+			"used_by_classes"
+			{
+				"terrorists"		"1"
+				"counter-terrorists"		"1"
+			}
+			"attributes"
+			{
+				"pedestal display model"		"models/weapons/v_knife_gut_inspect.mdl"
+			}
+			"inventory_image_data"
+			{
+				"camera_angles"		"30.0 -95.0 23.0"
+				"camera_offset"		"10.0 1.2 -2"
+			}
+			"paint_data"
+			{
+				"PaintableMaterial0"
+				{
+					"Name"		"knife_gut"
+					"OrigMat"		"knife_gut"
+					"ViewmodelDim"		"2048"
+					"WorldDim"		"512"
+					"BaseTextureOverride"		"0"
+					"WeaponLength"		"14.610000"
+					"UVScale"		"0.733000"
+				}
+			}
+		}
+		"custom_weapon_g3sg1_prefab" // Replacing G3SG1 with Huntsman Knife
+		{
+			"name"		"weapon_knife_tactical"
+			"prefab"		"melee_unusual"
+			"item_name"		"#SFUI_WPNHUD_KnifeTactical"
+			"item_description"		"#CSGO_Item_Desc_KnifeTactical"
+			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_tactical"
+			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_tactical.vtf"
+			"model_player"		"models/weapons/v_knife_tactical.mdl"
+			"model_world"		"models/weapons/w_knife_tactical.mdl"
+			"used_by_classes"
+			{
+				"terrorists"		"1"
+				"counter-terrorists"		"1"
+			}
+			"attributes"
+			{
+				"pedestal display model"		"models/weapons/v_knife_tactical_inspect.mdl"
+			}
+			"inventory_image_data"
+			{
+				"camera_angles"		"30.0 -95.0 29.0"
+				"camera_offset"		"7.0 1.5 -1.5"
+			}
+			"paint_data"
+			{
+				"PaintableMaterial0"
+				{
+					"Name"		"knife_tactical"
+					"ViewmodelDim"		"2048"
+					"WorldDim"		"512"
+					"BaseTextureOverride"		"0"
+					"WeaponLength"		"15.300000"
+					"UVScale"		"0.506000"
+				}
+			}
+			"tags"
+			{
+				"ItemSet"
+				{
+					"tag_value"		"set_community_3"
+					"tag_text"		"#CSGO_set_community_3"
+					"tag_group"		"ItemSet"
+					"tag_group_text"		"#SFUI_InvTooltip_SetTag"
+				}
+			}
+		}
+		"custom_weapon_galilar_prefab" // Replacing Galil-AR with Karambit
+		{
+			"name"		"weapon_knife_karambit"
+			"prefab"		"melee_unusual"
+			"item_name"		"#SFUI_WPNHUD_KnifeKaram"
+			"item_description"		"#CSGO_Item_Desc_Knife_Karam"
+			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_karambit"
+			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_karambit.vtf"
+			"model_player"		"models/weapons/v_knife_karam.mdl"
+			"model_world"		"models/weapons/w_knife_karam.mdl"
+			"used_by_classes"
+			{
+				"terrorists"		"1"
+				"counter-terrorists"		"1"
+			}
+			"attributes"
+			{
+				"pedestal display model"		"models/weapons/v_knife_karam_inspect.mdl"
+			}
+			"inventory_image_data"
+			{
+				"camera_angles"		"30.0 -95.0 -5.0"
+				"camera_offset"		"10.0 1.5 -3.2"
+			}
+			"paint_data"
+			{
+				"PaintableMaterial0"
+				{
+					"Name"		"knife_karam"
+					"OrigMat"		"karam"
+					"ViewmodelDim"		"2048"
+					"WorldDim"		"512"
+					"BaseTextureOverride"		"0"
+					"WeaponLength"		"9.813000"
+					"UVScale"		"0.438000"
+				}
+			}
+		}
+		"custom_weapon_glock_prefab" // Replacing Glock-18 with M9 Bayonet
+		{
+			"name"		"weapon_knife_m9_bayonet"
+			"prefab"		"melee_unusual"
+			"item_name"		"#SFUI_WPNHUD_KnifeM9"
+			"item_description"		"#CSGO_Item_Desc_KnifeM9"
+			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_m9_bayonet"
+			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_m9_bayonet.vtf"
+			"model_player"		"models/weapons/v_knife_m9_bay.mdl"
+			"model_world"		"models/weapons/w_knife_m9_bay.mdl"
+			"used_by_classes"
+			{
+				"terrorists"		"1"
+				"counter-terrorists"		"1"
+			}
+			"attributes"
+			{
+				"pedestal display model"		"models/weapons/v_knife_m9_bay_inspect.mdl"
+			}
+			"inventory_image_data"
+			{
+				"camera_angles"		"30.0 -95.0 29.0"
+				"camera_offset"		"7.0 1.5 -1.5"
+			}
+			"paint_data"
+			{
+				"PaintableMaterial0"
+				{
+					"Name"		"knife_m9_bay"
+					"ViewmodelDim"		"2048"
+					"WorldDim"		"512"
+					"BaseTextureOverride"		"0"
+					"WeaponLength"		"15.300000"
+					"UVScale"		"0.506000"
+				}
+			}
+		}
+		"custom_weapon_m249_prefab" // Replacing M249 with Navaja Knife
+		{
+			"name"		"weapon_knife_gypsy_jackknife"
+			"prefab"		"melee_unusual"
+			"item_name"		"#SFUI_WPNHUD_knife_gypsy_jackknife"
+			"item_description"		"#CSGO_Item_Desc_knife_gypsy_jackknife"
+			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_gypsy_jackknife"
+			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_gypsy_jackknife.vtf"
+			"model_player"		"models/weapons/v_knife_gypsy_jackknife.mdl"
+			"model_world"		"models/weapons/w_knife_gypsy_jackknife.mdl"
+			"model_dropped"		"models/weapons/w_knife_gypsy_jackknife_dropped.mdl"
+			"used_by_classes"
+			{
+				"terrorists"		"1"
+				"counter-terrorists"		"1"
+			}
+			"attributes"
+			{
+				"pedestal display model"		"models/weapons/v_knife_gypsy_jackknife_inspect.mdl"
+			}
+			"inventory_image_data"
+			{
+				"spot_light_key"
+				{
+					"position"		"-45 50 35"
+					"color"		"0.55 0.55 0.56"
+					"lookat"		"0.0 0.0 0.0"
+					"inner_cone"		"0.500000"
+					"outer_cone"		"1.000000"
+				}
+			}
+			"paint_data"
+			{
+				"PaintableMaterial0"
+				{
+					"Name"		"knife_gypsy_jack"
+					"ViewmodelDim"		"2048"
+					"WorldDim"		"512"
+					"BaseTextureOverride"		"0"
+					"WeaponLength"		"12.570000"
+					"UVScale"		"0.360000"
+				}
+			}
+		}
+		"custom_weapon_m4a1_silencer_prefab" // Replacing M4A1-S with Nomad Knife
+		{
+			"name"		"weapon_knife_outdoor"
+			"prefab"		"melee_unusual"
+			"item_name"		"#SFUI_WPNHUD_knife_outdoor"
+			"item_description"		"#CSGO_Item_Desc_knife_outdoor"
+			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_outdoor"
+			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_outdoor.vtf"
+			"model_player"		"models/weapons/v_knife_outdoor.mdl"
+			"model_world"		"models/weapons/w_knife_outdoor.mdl"
+			"model_dropped"		"models/weapons/w_knife_outdoor_dropped.mdl"
+			"used_by_classes"
+			{
+				"terrorists"		"1"
+				"counter-terrorists"		"1"
+			}
+			"attributes"
+			{
+				"pedestal display model"		"models/weapons/v_knife_outdoor_inspect.mdl"
+			}
+			"inventory_image_data"
+			{
+				"camera_angles"		"30.0 -95.0 29.0"
+				"camera_offset"		"7.0 1.5 -1.5"
+			}
+			"paint_data"
+			{
+				"PaintableMaterial0"
+				{
+					"Name"		"knife_outdoor"
+					"ViewmodelDim"		"2048"
+					"WorldDim"		"512"
+					"BaseTextureOverride"		"0"
+					"WeaponLength"		"12.570000"
+					"UVScale"		"0.360000"
+				}
+			}
+		}
+		"custom_weapon_m4a1_prefab" // Replacing M4A4 with Paracord Knife
+		{
+			"name"		"weapon_knife_cord"
+			"prefab"		"melee_unusual"
+			"item_name"		"#SFUI_WPNHUD_knife_cord"
+			"item_description"		"#CSGO_Item_Desc_knife_cord"
+			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_cord"
+			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_cord.vtf"
+			"model_player"		"models/weapons/v_knife_cord.mdl"
+			"model_world"		"models/weapons/w_knife_cord.mdl"
+			"model_dropped"		"models/weapons/w_knife_cord_dropped.mdl"
+			"used_by_classes"
+			{
+				"terrorists"		"1"
+				"counter-terrorists"		"1"
+			}
+			"attributes"
+			{
+				"pedestal display model"		"models/weapons/v_knife_cord_inspect.mdl"
+			}
+			"inventory_image_data"
+			{
+				"camera_angles"		"0 0 0"
+				"camera_offset"		"0 0 0"
+			}
+			"paint_data"
+			{
+				"PaintableMaterial0"
+				{
+					"Name"		"knife_cord"
+					"ViewmodelDim"		"2048"
+					"WorldDim"		"512"
+					"BaseTextureOverride"		"0"
+					"WeaponLength"		"12.570000"
+					"UVScale"		"0.360000"
+				}
+			}
+		}
+		"custom_weapon_mac10_prefab" // Replacing MAC-10 with Shadow Daggers
 		{
 			"name"		"weapon_knife_push"
 			"prefab"		"melee_unusual"
@@ -486,17 +606,17 @@
 				}
 			}
 		}
-		"custom_weapon_m4a1_prefab" // Replacing M4A4 with Paracord Knife
+		"custom_weapon_mag7_prefab" // Replacing MAG-7 with Skeleton Knife
 		{
-			"name"		"weapon_knife_cord"
+			"name"		"weapon_knife_skeleton"
 			"prefab"		"melee_unusual"
-			"item_name"		"#SFUI_WPNHUD_knife_cord"
-			"item_description"		"#CSGO_Item_Desc_knife_cord"
-			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_cord"
-			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_cord.vtf"
-			"model_player"		"models/weapons/v_knife_cord.mdl"
-			"model_world"		"models/weapons/w_knife_cord.mdl"
-			"model_dropped"		"models/weapons/w_knife_cord_dropped.mdl"
+			"item_name"		"#SFUI_WPNHUD_knife_skeleton"
+			"item_description"		"#CSGO_Item_Desc_knife_skeleton"
+			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_skeleton"
+			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_skeleton.vtf"
+			"model_player"		"models/weapons/v_knife_skeleton.mdl"
+			"model_world"		"models/weapons/w_knife_skeleton.mdl"
+			"model_dropped"		"models/weapons/w_knife_skeleton_dropped.mdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -504,7 +624,7 @@
 			}
 			"attributes"
 			{
-				"pedestal display model"		"models/weapons/v_knife_cord_inspect.mdl"
+				"pedestal display model"		"models/weapons/v_knife_skeleton_inspect.mdl"
 			}
 			"inventory_image_data"
 			{
@@ -515,7 +635,7 @@
 			{
 				"PaintableMaterial0"
 				{
-					"Name"		"knife_cord"
+					"Name"		"knife_skeleton"
 					"ViewmodelDim"		"2048"
 					"WorldDim"		"512"
 					"BaseTextureOverride"		"0"
@@ -524,171 +644,7 @@
 				}
 			}
 		}
-		"custom_weapon_mac10_prefab" // Replacing MAC-10 with Survival Knife
-		{
-			"name"		"weapon_knife_canis"
-			"prefab"		"melee_unusual"
-			"item_name"		"#SFUI_WPNHUD_knife_canis"
-			"item_description"		"#CSGO_Item_Desc_knife_canis"
-			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_canis"
-			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_canis.vtf"
-			"model_player"		"models/weapons/v_knife_canis.mdl"
-			"model_world"		"models/weapons/w_knife_canis.mdl"
-			"model_dropped"		"models/weapons/w_knife_canis_dropped.mdl"
-			"used_by_classes"
-			{
-				"terrorists"		"1"
-				"counter-terrorists"		"1"
-			}
-			"attributes"
-			{
-				"pedestal display model"		"models/weapons/v_knife_canis_inspect.mdl"
-			}
-			"inventory_image_data"
-			{
-				"camera_angles"		"0 0 0"
-				"camera_offset"		"0 0 0"
-			}
-			"paint_data"
-			{
-				"PaintableMaterial0"
-				{
-					"Name"		"knife_canis"
-					"ViewmodelDim"		"2048"
-					"WorldDim"		"512"
-					"BaseTextureOverride"		"0"
-					"WeaponLength"		"12.570000"
-					"UVScale"		"0.360000"
-				}
-			}
-		}
-		"custom_weapon_p90_prefab" // Replacing P90 with Ursus Knife
-		{
-			"name"		"weapon_knife_ursus"
-			"prefab"		"melee_unusual"
-			"item_name"		"#SFUI_WPNHUD_knife_ursus"
-			"item_description"		"#CSGO_Item_Desc_knife_ursus"
-			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_ursus"
-			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_ursus.vtf"
-			"model_player"		"models/weapons/v_knife_ursus.mdl"
-			"model_world"		"models/weapons/w_knife_ursus.mdl"
-			"model_dropped"		"models/weapons/w_knife_ursus_dropped.mdl"
-			"used_by_classes"
-			{
-				"terrorists"		"1"
-				"counter-terrorists"		"1"
-			}
-			"attributes"
-			{
-				"pedestal display model"		"models/weapons/v_knife_ursus_inspect.mdl"
-			}
-			"inventory_image_data"
-			{
-				"spot_light_key"
-				{
-					"position"		"-35 55 25"
-					"color"		"0.70 0.70 0.71"
-					"lookat"		"0.0 0.0 0.0"
-					"inner_cone"		"0.500000"
-					"outer_cone"		"2.000000"
-				}
-			}
-			"paint_data"
-			{
-				"PaintableMaterial0"
-				{
-					"Name"		"knife_ursus"
-					"ViewmodelDim"		"2048"
-					"WorldDim"		"512"
-					"BaseTextureOverride"		"0"
-					"WeaponLength"		"12.570000"
-					"UVScale"		"0.360000"
-				}
-			}
-		}
-		"custom_weapon_mp5sd_prefab" // Replacing MP5-SD with Navaja Knife
-		{
-			"name"		"weapon_knife_gypsy_jackknife"
-			"prefab"		"melee_unusual"
-			"item_name"		"#SFUI_WPNHUD_knife_gypsy_jackknife"
-			"item_description"		"#CSGO_Item_Desc_knife_gypsy_jackknife"
-			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_gypsy_jackknife"
-			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_gypsy_jackknife.vtf"
-			"model_player"		"models/weapons/v_knife_gypsy_jackknife.mdl"
-			"model_world"		"models/weapons/w_knife_gypsy_jackknife.mdl"
-			"model_dropped"		"models/weapons/w_knife_gypsy_jackknife_dropped.mdl"
-			"used_by_classes"
-			{
-				"terrorists"		"1"
-				"counter-terrorists"		"1"
-			}
-			"attributes"
-			{
-				"pedestal display model"		"models/weapons/v_knife_gypsy_jackknife_inspect.mdl"
-			}
-			"inventory_image_data"
-			{
-				"spot_light_key"
-				{
-					"position"		"-45 50 35"
-					"color"		"0.55 0.55 0.56"
-					"lookat"		"0.0 0.0 0.0"
-					"inner_cone"		"0.500000"
-					"outer_cone"		"1.000000"
-				}
-			}
-			"paint_data"
-			{
-				"PaintableMaterial0"
-				{
-					"Name"		"knife_gypsy_jack"
-					"ViewmodelDim"		"2048"
-					"WorldDim"		"512"
-					"BaseTextureOverride"		"0"
-					"WeaponLength"		"12.570000"
-					"UVScale"		"0.360000"
-				}
-			}
-		}
-		"custom_weapon_ump45_prefab" // Replacing UMP-45 with Nomad Knife
-		{
-			"name"		"weapon_knife_outdoor"
-			"prefab"		"melee_unusual"
-			"item_name"		"#SFUI_WPNHUD_knife_outdoor"
-			"item_description"		"#CSGO_Item_Desc_knife_outdoor"
-			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_outdoor"
-			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_outdoor.vtf"
-			"model_player"		"models/weapons/v_knife_outdoor.mdl"
-			"model_world"		"models/weapons/w_knife_outdoor.mdl"
-			"model_dropped"		"models/weapons/w_knife_outdoor_dropped.mdl"
-			"used_by_classes"
-			{
-				"terrorists"		"1"
-				"counter-terrorists"		"1"
-			}
-			"attributes"
-			{
-				"pedestal display model"		"models/weapons/v_knife_outdoor_inspect.mdl"
-			}
-			"inventory_image_data"
-			{
-				"camera_angles"		"30.0 -95.0 29.0"
-				"camera_offset"		"7.0 1.5 -1.5"
-			}
-			"paint_data"
-			{
-				"PaintableMaterial0"
-				{
-					"Name"		"knife_outdoor"
-					"ViewmodelDim"		"2048"
-					"WorldDim"		"512"
-					"BaseTextureOverride"		"0"
-					"WeaponLength"		"12.570000"
-					"UVScale"		"0.360000"
-				}
-			}
-		}
-		"custom_weapon_xm1014_prefab" // Replacing XM1014 with Stiletto Knife
+		"custom_weapon_mp7_prefab" // Replacing MP7 with Stiletto Knife
 		{
 			"name"		"weapon_knife_stiletto"
 			"prefab"		"melee_unusual"
@@ -737,7 +693,45 @@
 				}
 			}
 		}
-		"custom_weapon_bizon_prefab" // Replacing PP-Bizon with Talon Knife
+		"custom_weapon_mp9_prefab" // Replacing MP9 with Survival Knife
+		{
+			"name"		"weapon_knife_canis"
+			"prefab"		"melee_unusual"
+			"item_name"		"#SFUI_WPNHUD_knife_canis"
+			"item_description"		"#CSGO_Item_Desc_knife_canis"
+			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_canis"
+			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_canis.vtf"
+			"model_player"		"models/weapons/v_knife_canis.mdl"
+			"model_world"		"models/weapons/w_knife_canis.mdl"
+			"model_dropped"		"models/weapons/w_knife_canis_dropped.mdl"
+			"used_by_classes"
+			{
+				"terrorists"		"1"
+				"counter-terrorists"		"1"
+			}
+			"attributes"
+			{
+				"pedestal display model"		"models/weapons/v_knife_canis_inspect.mdl"
+			}
+			"inventory_image_data"
+			{
+				"camera_angles"		"0 0 0"
+				"camera_offset"		"0 0 0"
+			}
+			"paint_data"
+			{
+				"PaintableMaterial0"
+				{
+					"Name"		"knife_canis"
+					"ViewmodelDim"		"2048"
+					"WorldDim"		"512"
+					"BaseTextureOverride"		"0"
+					"WeaponLength"		"12.570000"
+					"UVScale"		"0.360000"
+				}
+			}
+		}
+		"custom_weapon_negev_prefab" // Replacing Negev with Talon Knife
 		{
 			"name"		"weapon_knife_widowmaker"
 			"prefab"		"melee_unusual"
@@ -780,17 +774,17 @@
 				}
 			}
 		}
-		"custom_weapon_mag7_prefab" // Replacing MAG-7 with Skeleton Knife
+		"custom_weapon_nova_prefab" // Replacing Nova with Ursus Knife
 		{
-			"name"		"weapon_knife_skeleton"
+			"name"		"weapon_knife_ursus"
 			"prefab"		"melee_unusual"
-			"item_name"		"#SFUI_WPNHUD_knife_skeleton"
-			"item_description"		"#CSGO_Item_Desc_knife_skeleton"
-			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_skeleton"
-			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_skeleton.vtf"
-			"model_player"		"models/weapons/v_knife_skeleton.mdl"
-			"model_world"		"models/weapons/w_knife_skeleton.mdl"
-			"model_dropped"		"models/weapons/w_knife_skeleton_dropped.mdl"
+			"item_name"		"#SFUI_WPNHUD_knife_ursus"
+			"item_description"		"#CSGO_Item_Desc_knife_ursus"
+			"image_inventory"		"econ/weapons/base_weapons/weapon_knife_ursus"
+			"icon_default_image"		"materials/icons/inventory_icon_weapon_knife_ursus.vtf"
+			"model_player"		"models/weapons/v_knife_ursus.mdl"
+			"model_world"		"models/weapons/w_knife_ursus.mdl"
+			"model_dropped"		"models/weapons/w_knife_ursus_dropped.mdl"
 			"used_by_classes"
 			{
 				"terrorists"		"1"
@@ -798,18 +792,24 @@
 			}
 			"attributes"
 			{
-				"pedestal display model"		"models/weapons/v_knife_skeleton_inspect.mdl"
+				"pedestal display model"		"models/weapons/v_knife_ursus_inspect.mdl"
 			}
 			"inventory_image_data"
 			{
-				"camera_angles"		"0 0 0"
-				"camera_offset"		"0 0 0"
+				"spot_light_key"
+				{
+					"position"		"-35 55 25"
+					"color"		"0.70 0.70 0.71"
+					"lookat"		"0.0 0.0 0.0"
+					"inner_cone"		"0.500000"
+					"outer_cone"		"2.000000"
+				}
 			}
 			"paint_data"
 			{
 				"PaintableMaterial0"
 				{
-					"Name"		"knife_skeleton"
+					"Name"		"knife_ursus"
 					"ViewmodelDim"		"2048"
 					"WorldDim"		"512"
 					"BaseTextureOverride"		"0"
@@ -821,44 +821,6 @@
 	}
 	"items"
 	{
-		"1"
-		{
-			"name"		"weapon_deagle"
-			"prefab"		"custom_weapon_deagle_prefab"
-			"item_quality"		"normal"
-			"baseitem"		"1"
-			"default_slot_item"		"1"
-			"item_sub_position"		"secondary4"
-			"item_shares_equip_slot"		"1"
-		}
-		"2"
-		{
-			"name"		"weapon_elite"
-			"prefab"		"custom_weapon_elite_prefab"
-			"item_quality"		"normal"
-			"baseitem"		"1"
-			"default_slot_item"		"1"
-			"item_sub_position"		"secondary1"
-		}
-		"3"
-		{
-			"name"		"weapon_fiveseven"
-			"prefab"		"custom_weapon_fiveseven_prefab"
-			"item_quality"		"normal"
-			"baseitem"		"1"
-			"default_slot_item"		"1"
-			"item_sub_position"		"secondary3"
-			"item_shares_equip_slot"		"1"
-		}
-		"4"
-		{
-			"name"		"weapon_glock"
-			"prefab"		"custom_weapon_glock_prefab"
-			"item_quality"		"normal"
-			"baseitem"		"1"
-			"default_slot_item"		"1"
-			"item_sub_position"		"secondary0"
-		}
 		"7"
 		{
 			"name"		"weapon_ak47"
@@ -886,6 +848,25 @@
 			"default_slot_item"		"1"
 			"item_sub_position"		"rifle4"
 		}
+		"1"
+		{
+			"name"		"weapon_deagle"
+			"prefab"		"custom_weapon_deagle_prefab"
+			"item_quality"		"normal"
+			"baseitem"		"1"
+			"default_slot_item"		"1"
+			"item_sub_position"		"secondary4"
+			"item_shares_equip_slot"		"1"
+		}
+		"2"
+		{
+			"name"		"weapon_elite"
+			"prefab"		"custom_weapon_elite_prefab"
+			"item_quality"		"normal"
+			"baseitem"		"1"
+			"default_slot_item"		"1"
+			"item_sub_position"		"secondary1"
+		}
 		"10"
 		{
 			"name"		"weapon_famas"
@@ -894,6 +875,16 @@
 			"baseitem"		"1"
 			"default_slot_item"		"1"
 			"item_sub_position"		"rifle0"
+		}
+		"3"
+		{
+			"name"		"weapon_fiveseven"
+			"prefab"		"custom_weapon_fiveseven_prefab"
+			"item_quality"		"normal"
+			"baseitem"		"1"
+			"default_slot_item"		"1"
+			"item_sub_position"		"secondary3"
+			"item_shares_equip_slot"		"1"
 		}
 		"11"
 		{
@@ -913,6 +904,15 @@
 			"item_quality"		"normal"
 			"item_sub_position"		"rifle0"
 		}
+		"4"
+		{
+			"name"		"weapon_glock"
+			"prefab"		"custom_weapon_glock_prefab"
+			"item_quality"		"normal"
+			"baseitem"		"1"
+			"default_slot_item"		"1"
+			"item_sub_position"		"secondary0"
+		}
 		"14"
 		{
 			"name"		"weapon_m249"
@@ -921,6 +921,15 @@
 			"baseitem"		"1"
 			"default_slot_item"		"1"
 			"item_sub_position"		"heavy3"
+		}
+		"60"
+		{
+			"name"		"weapon_m4a1_silencer"
+			"prefab"		"custom_weapon_m4a1_silencer_prefab"
+			"item_quality"		"normal"
+			"baseitem"		"1"
+			"item_sub_position"		"rifle1"
+			"item_shares_equip_slot"		"1"
 		}
 		"16"
 		{
@@ -941,52 +950,6 @@
 			"item_quality"		"normal"
 			"item_sub_position"		"smg0"
 		}
-		"19"
-		{
-			"name"		"weapon_p90"
-			"prefab"		"custom_weapon_p90_prefab"
-			"item_quality"		"normal"
-			"baseitem"		"1"
-			"default_slot_item"		"1"
-			"item_sub_position"		"smg3"
-		}
-		"23"
-		{
-			"name"		"weapon_mp5sd"
-			"prefab"		"custom_weapon_mp5sd_prefab"
-			"item_quality"		"normal"
-			"baseitem"		"1"
-			"default_slot_item"		"0"
-			"item_sub_position"		"smg1"
-			"item_shares_equip_slot"		"1"
-		}
-		"24"
-		{
-			"name"		"weapon_ump45"
-			"prefab"		"custom_weapon_ump45_prefab"
-			"item_quality"		"normal"
-			"baseitem"		"1"
-			"default_slot_item"		"1"
-			"item_sub_position"		"smg2"
-		}
-		"25"
-		{
-			"name"		"weapon_xm1014"
-			"prefab"		"custom_weapon_xm1014_prefab"
-			"item_quality"		"normal"
-			"baseitem"		"1"
-			"default_slot_item"		"1"
-			"item_sub_position"		"heavy1"
-		}
-		"26"
-		{
-			"name"		"weapon_bizon"
-			"prefab"		"custom_weapon_bizon_prefab"
-			"baseitem"		"1"
-			"default_slot_item"		"1"
-			"item_quality"		"normal"
-			"item_sub_position"		"smg4"
-		}
 		"27"
 		{
 			"name"		"weapon_mag7"
@@ -995,6 +958,43 @@
 			"baseitem"		"1"
 			"default_slot_item"		"1"
 			"item_sub_position"		"heavy2"
+		}
+		"33"
+		{
+			"name"		"weapon_mp7"
+			"prefab"		"custom_weapon_mp7_prefab"
+			"item_quality"		"normal"
+			"baseitem"		"1"
+			"default_slot_item"		"1"
+			"item_sub_position"		"smg1"
+			"item_shares_equip_slot"		"1"
+		}
+		"34"
+		{
+			"name"		"weapon_mp9"
+			"prefab"		"custom_weapon_mp9_prefab"
+			"item_quality"		"normal"
+			"baseitem"		"1"
+			"default_slot_item"		"1"
+			"item_sub_position"		"smg0"
+		}
+		"28"
+		{
+			"name"		"weapon_negev"
+			"prefab"		"custom_weapon_negev_prefab"
+			"item_quality"		"normal"
+			"baseitem"		"1"
+			"default_slot_item"		"1"
+			"item_sub_position"		"heavy4"
+		}
+		"35"
+		{
+			"name"		"weapon_nova"
+			"prefab"		"custom_weapon_nova_prefab"
+			"item_quality"		"normal"
+			"baseitem"		"1"
+			"default_slot_item"		"1"
+			"item_sub_position"		"heavy0"
 		}
 	}
 }
