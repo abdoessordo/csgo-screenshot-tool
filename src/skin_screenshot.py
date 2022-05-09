@@ -15,7 +15,6 @@ for skin in all_skins:
         gun_index -= 34
 
     screen_manip.verify_if_loaded()
-    screen_manip.load_skin()
     try:
         config_file_manip.modify_skin(f'{base_directory}/configs/{input_skin}', wear, gun_index)
     except:

@@ -12,8 +12,13 @@ def load_skin():
     pyautogui.moveTo(0.85 * WIDTH, 0.98 * HEIGHT, duration=0.1)
     pyautogui.click()
     # move to skin folder
-    pyautogui.moveTo(0.40 * WIDTH, 0.4 * HEIGHT, duration=0.1)
+    pyautogui.moveTo(0.40 * WIDTH, 0.405 * HEIGHT, duration=0.1)
     # double click
+    pyautogui.click()
+    pyautogui.click()
+
+    # When we load the first skin, we have to click the folder and then the file, so we need two double clicks.
+    # After the first load, this double click is not necessary anymore, but it doesn't break anything either.
     pyautogui.click()
     pyautogui.click()
 
