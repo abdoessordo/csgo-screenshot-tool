@@ -8,10 +8,10 @@ all_skins, base_directory, output_directory = get_all_skins()
 for i, skin in enumerate(all_skins):
     input_skin = skin['input_config_file']
     output_img = skin['output_screenshot_directory']
-    from_float = float(skin['from_float'])
-    to_float = float(skin['to_float'])
-    min_float = float(skin['min_float'])
-    max_float = float(skin['max_float'])
+    from_float = int(float(skin['from_float']) * 100)
+    to_float = int(float(skin['to_float']) * 100)
+    min_float = int(float(skin['min_float']) * 100)
+    max_float = int(float(skin['max_float']) * 100)
 
     print('Waiting for workbench availability...')
     screen_manip.verify_if_loaded()
@@ -24,7 +24,7 @@ for i, skin in enumerate(all_skins):
     print('Loaded skin config')
 
     current_float_goal = from_float
-    current_float = min_float
+    current_float = float(min_float)
 
     # FIXME: Floats are kinda broken
     while current_float_goal <= to_float:
@@ -33,7 +33,7 @@ for i, skin in enumerate(all_skins):
         screen_manip.take_screenshot(output_img_dir)
         screen_manip.crop_image(output_img_dir)
 
-        current_float_goal += 0.01
+        current_float_goal += 1
         current_float = screen_manip.increase_float(current_float, current_float_goal, min_float, max_float)
         sleep(1.5)
 

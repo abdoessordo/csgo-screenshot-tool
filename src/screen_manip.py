@@ -28,6 +28,8 @@ def load_skin(first):
 def reset_float_slider():
     pyautogui.press('tab', presses=14, interval=0.1)
     pyautogui.press('pagedown', presses=10, interval=0.1)
+    sleep(0.01)
+    pyautogui.press('enter')
 
 
 def increase_float(current_float, float_goal, min_float, max_float):
