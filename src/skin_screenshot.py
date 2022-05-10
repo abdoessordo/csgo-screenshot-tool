@@ -1,13 +1,16 @@
 from time import sleep
 from get_all_skins import get_all_skins
+from get_resolution_config import get_resolution_config
 import screen_manip
 import config_file_manip
 
-all_skins, base_directory, output_directory = get_all_skins()
+all_skins, base_directory, output_directory, resolution = get_all_skins()
+resolution_config = get_resolution_config(resolution)
 
 for i, skin in enumerate(all_skins):
     input_skin = skin['input_config_file']
     output_img = skin['output_screenshot_directory']
+    weapon = skin['weapon']
     has_wear = skin['has_wear']
     from_float = int(float(skin['from_float']) * 100)
     to_float = int(float(skin['to_float']) * 100)
@@ -40,7 +43,7 @@ for i, skin in enumerate(all_skins):
         while True:
             print('Taking screenshot...')
             screen_manip.take_screenshot(output_img_dir)
-            screen_manip.crop_image(output_img_dir)
+            screen_manip.crop_image(output_img_dir, tuple(resolution_config['weapons'][weapon]))
 
             if last_output_img_dir is None:
                 print('Breaking because of None')

@@ -1,4 +1,7 @@
+import json
 from time import sleep
+
+import numpy as np
 from PIL import Image, ImageChops
 import pyautogui
 import img
@@ -58,6 +61,7 @@ def take_screenshot(directory: str) -> None:
 
 
 def is_screenshot_correct(img_path: str, reference_img_path: str) -> bool:
+    # FIXME: Improve this function to detect correct/wrong screenshots better
     im = Image.open(img_path)
     reference_img = Image.open(reference_img_path)
 
@@ -69,7 +73,7 @@ def is_screenshot_correct(img_path: str, reference_img_path: str) -> bool:
     other = 1
 
     for pixel in diff.getdata():
-        if pixel[0] <= 3 and pixel[0] <= 3 and pixel[0] <= 3:
+        if pixel[0] <= 10 and pixel[0] <= 10 and pixel[0] <= 10:
             black += 1
         else:
             other += 1
@@ -80,11 +84,39 @@ def is_screenshot_correct(img_path: str, reference_img_path: str) -> bool:
     return ratio > 10
 
 
-def crop_image(directory: str) -> None:
-    # FIXME: Crop config per weapon and working with 4K and 1080P
+def crop_image(directory: str, box: tuple) -> None:
     im = Image.open(directory)
-    im_crop = im.crop((270, 40, 1830, 910))
+    im_crop = im.crop(box)
     im_crop.save(directory, 'PNG')
+
+
+def store_bounding_box(directory: str, weapon: str, base: tuple) -> None:
+    # FIXME: Remove this function when not needed anymore
+    im = Image.open(directory)
+    im = im.convert('RGBA')
+
+    # This is a height x width x 4 numpy array.
+    data = np.array(im)
+    # Temporarily unpack the bands for readability.
+    red, green, blue, alpha = data.T
+    # Replace our background color with transparency.
+    white_areas = (red == 31) & (green == 41) & (blue == 55) & (alpha == 255)
+    data[...][white_areas.T] = (0, 0, 0, 0)
+
+    im2 = Image.fromarray(data)
+    box = list(im2.getbbox())
+    print(box, base)
+    box[0] += (base[0] - 10)
+    box[1] += (base[1] - 10)
+    box[2] += (base[0] + 10)
+    box[3] += (base[1] + 10)
+    print(box)
+
+    with open('./tmp/bounding.json', 'r+', encoding='utf-8') as f:
+        content = json.load(f)
+        content[weapon] = box
+        f.seek(0)
+        json.dump(content, f, ensure_ascii=False, indent=4)
 
 
 def verify_if_loaded() -> None:
@@ -110,7 +142,6 @@ def open_workshop() -> None:
 
 
 def close_game() -> None:
-    close_workshop()
     sleep(0.3)
     pyautogui.write('exit')
     pyautogui.press('enter')

@@ -13,5 +13,5 @@
 ## Usage
 
 1. Inside the `src` directory, run `pipenv shell` to use the subshell in virtual environment
-2. Run `python skin_screenshot.py <inputConfigFilePath> <screenshotOutputDirectoryPath>`, for example `python skin_screenshot.py C:\Users\Anon\Downloads\screenshots\tmp\screenshots\base_knives.json C:\Users\Anon\Downloads\screenshots\tmp\output`
+2. Run `python skin_screenshot.py <inputConfigFilePath> <screenshotOutputDirectoryPath> <resolution>`, for example `python skin_screenshot.py C:\Users\Anon\Downloads\screenshots\tmp\screenshots\base_knives.json C:\Users\Anon\Downloads\screenshots\tmp\output 1080P`
 3. Open MIGI, build the addons (if you want to build without weapon modification, just delete the `m_workbench_weapon_replacement.vpk` before building), and launch the game

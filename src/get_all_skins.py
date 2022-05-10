@@ -4,9 +4,9 @@ import json
 
 def get_all_skins() -> tuple:
     try:
-        base_directory, output_directory = sys.argv[1::]
+        base_directory, output_directory, resolution = sys.argv[1::]
     except ValueError:
-        print('2 arguments required')
+        print('3 arguments required')
         sys.exit()
 
     with open(base_directory, 'r') as all_skins_file:
@@ -18,4 +18,4 @@ def get_all_skins() -> tuple:
     base_directory.pop()
     base_directory = '\\'.join(base_directory)
 
-    return all_skins, base_directory, output_directory
+    return all_skins, base_directory, output_directory, resolution
