@@ -3,7 +3,7 @@ from PIL import Image
 
 
 def verify_loaded() -> bool:
-    img_dir = './is_loaded.png'
+    img_dir = './tmp/is_loaded.png'
     im = Image.open(img_dir)
     im = im.convert('RGB')
     data = np.array(im)

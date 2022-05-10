@@ -1,5 +1,5 @@
 from time import sleep
-from PIL import Image
+from PIL import Image, ImageChops
 import pyautogui
 import img
 import os
@@ -7,51 +7,39 @@ import os
 WIDTH, HEIGHT = pyautogui.size()
 
 
-def load_skin(first: bool) -> None:
-    if first:
-        # Move the cursor into the game and select the workbench.
-        pyautogui.moveTo(1, 1, duration=0.1)
-        pyautogui.click()
-
-    # Move to the "Load" button. The first time we do this, it takes 12 presses. After that, it always
-    # takes 6 presses.
-    if first:
-        pyautogui.press('tab', presses=12, interval=0.1)
-    else:
-        pyautogui.press('tab', presses=6, interval=0.1)
-
+def load_skin() -> None:
+    # Move to the "Load" button.
+    pyautogui.press('tab', presses=1, interval=0.1)
     # Press the "Load" button.
     pyautogui.press('enter')
-
     # Navigate to the file select menu.
-    pyautogui.press('tab', presses=5, interval=0.1)
-
-    # The first time we do this, we must also select the folder first.
-    if first:
-        pyautogui.press('up')
-        pyautogui.press('enter')
-
+    pyautogui.press('tab', presses=1, interval=0.1)
+    # Select the folder.
+    pyautogui.press('up')
+    pyautogui.press('enter')
     # Select the file.
     pyautogui.press('up')
     pyautogui.press('enter')
 
 
 def reset_float_slider() -> None:
-    pyautogui.press('tab', presses=14, interval=0.1)
+    pyautogui.press('tab', presses=1, interval=0.1)
     pyautogui.press('pagedown', presses=10, interval=0.1)
     sleep(0.01)
     pyautogui.press('enter')
 
 
-def increase_float(current_float: float, float_goal: int, min_float: int, max_float: int) -> float:
+def increase_float(current_float: float, float_goal: int, min_float: int, max_float: int, has_wear: bool) -> float:
     steps = float((max_float - min_float) / 100)
 
     while current_float < float_goal:
-        pyautogui.press('right')
+        if has_wear:
+            pyautogui.press('right')
         current_float += steps
         sleep(0.1)
 
-    pyautogui.press('enter')
+    if has_wear:
+        pyautogui.press('enter')
 
     return current_float
 
@@ -69,6 +57,29 @@ def take_screenshot(directory: str) -> None:
     my_screenshot.save(directory)
 
 
+def is_screenshot_correct(img_path: str, reference_img_path: str) -> bool:
+    im = Image.open(img_path)
+    reference_img = Image.open(reference_img_path)
+
+    diff = ImageChops.difference(im, reference_img)
+    diff = diff.crop(diff.getbbox())
+
+    # Start both at 1 to avoid a division by zero.
+    black = 1
+    other = 1
+
+    for pixel in diff.getdata():
+        if pixel[0] <= 3 and pixel[0] <= 3 and pixel[0] <= 3:
+            black += 1
+        else:
+            other += 1
+
+    ratio = black / other
+
+    # There must be at least 10 times as much black pixels than other pixels.
+    return ratio > 10
+
+
 def crop_image(directory: str) -> None:
     # FIXME: Crop config per weapon and working with 4K and 1080P
     im = Image.open(directory)
@@ -79,17 +90,27 @@ def crop_image(directory: str) -> None:
 def verify_if_loaded() -> None:
     loaded = False
     while not loaded:
-        take_screenshot('./is_loaded.png')
+        take_screenshot('./tmp/is_loaded.png')
         loaded = img.verify_loaded()
-        sleep(1)
+        sleep(1.0)
 
 
-def close_game() -> None:
+def close_workshop() -> None:
     pyautogui.hotkey('alt', 'f4')
-    sleep(0.3)
-    pyautogui.typewrite('exit')
+
+
+def open_workshop() -> None:
+    # Move the cursor into the game.
+    pyautogui.moveTo(1, 1, duration=0.1)
+    pyautogui.click()
+    # NOTE: This `write` operation causes some weird behaviour which makes the tabbing functionality of the workbench
+    # work in reverse. No idea why, but we adapt all our tabbing logic to this side effect!
+    pyautogui.write('workshop_workbench')
     pyautogui.press('enter')
 
 
-if __name__ == '__main__':
-    verify_if_loaded()
+def close_game() -> None:
+    close_workshop()
+    sleep(0.3)
+    pyautogui.write('exit')
+    pyautogui.press('enter')
